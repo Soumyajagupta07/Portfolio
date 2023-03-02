@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.logo {
+    height: 85px;
+    width: 85px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 69px;
+
+}
+
+.navright {
+    margin-left: 444px;
+    display: flex;
+    align-items: center;
+}
+
+.my_info {
+    /* margin-left: 922px; */
+    margin-top: 70px;
+    display: flex;
+}
+
+.info {
+    margin-left: 30px;
+    margin-top: 120px;
+    color: beige;
+    font-size: 70px;
+    width: 900px;
+
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.prof_pic {
+    margin-right: 50px;
+
+}
+
+.my_name {
+    color: deeppink;
+}
+
+.avatar_about {
+    margin-top: 310px;
+}
+
+#avatar {
+    margin-left: 50px;
+    width: 561px;
+}
+
+.avatar_img {
+    height: 356px;
+    width: 293px;
+    margin-left: 103px;
+}
+
+h4 {
+    color: deeppink;
+    font-size: 52px;
+    text-decoration: underline;
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    /* display: flex; */
+}
+
+.avatar_about {
+    display: flex;
+}
+
+.about {
+    color: antiquewhite;
+}
+
+.skill_color {
+    color: aliceblue;
+}
+
+.skills ul {
+    display: flex;
+}
+
+.me {
+    list-style: none;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+/* .skills ul li:hover {
+    color: deeppink;
+    text-decoration: solid;
+} */
+
+/* .skill_color::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+} */
+
+.me::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    display: flex;
+    border-radius: 15px;
+    /* margin-left: 0;
+    bottom: -8px; */
+    left: 0;
+    background-color: deeppink;
+    transition: 0.5s;
+
+}
+
+.me.active_link::after{
+    width: 50%;
+}
+
+.writting{
+     margin-bottom: 4px;
+}
+
+.skill_content{
+    color: antiquewhite;
+}
