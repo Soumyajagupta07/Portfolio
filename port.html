@@ -9,6 +9,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
       </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9af8b6fc1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="navbar">
@@ -18,11 +20,11 @@
         <div class="navright">
             <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav"><a href="port.html">Home</a></li>
+                <li class="nav"><a href="about.html">About</a></li>
+                <li class="nav"><a href="#">Projects</a></li>
+                <li class="nav"><a href="#">Resume</a></li>
+                <li class="nav"><a href="#">Contact</a></li>
                 <li><button>Click</button></li>
             </ul>
         </nav>
@@ -44,13 +46,13 @@
             <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet maiores ut debitis vero pariatur modi doloremque excepturi illo, dolorum quod voluptas aliquid quo. Itaque atque cum laudantium autem cumque tenetur!</p><br><br>
             <div class="skills">
                 <ul class="skill_color">
-                    <li class="me active_link"><p class="writting">SKILLS</p></li>
-                    <li class="me"><p class="writting">EXPERIENCE</p></li>
-                    <li class="me"><p class="writting">EDUCATION</p></li>
+                    <li class="me active_link" onclick="opentab('Skills')"><p class="writting">SKILLS</p></li>
+                    <li class="me" onclick="opentab('Experience')"><p class="writting">EXPERIENCE</p></li>
+                    <li class="me" onclick="opentab('Education')"><p class="writting">EDUCATION</p></li>
                 </ul>
             </div>
             <br>
-            <div class="skill_content">
+            <div class="tab_content active_tab" id="Skills">
                 <ul>
                     <li>I'm a passionate web designer and having a knack of designing using <span>HTML/CSS/Javascript.....</span>
                          Would improve in backend afterward</li>
@@ -59,7 +61,26 @@
                     <li>I am an active <span> group worker </span> and can coordinate with leader and other team members and punctual enough to submit a deligated task within due time</li>
                 </ul>
             </div>
+            <div class="tab_content" id="Education">
+                nothing
+            </div>
+            <div class="tab_content" id="Experience">
+                nothing
+            </div>
         </div>
+    </div>
+    <script src="port.js"></script>
+
+    <div class="footer">
+        <p class="find">FOR MORE DETAILS</p><br>
+            <p class="connect">Contact me on</p><br>
+            <div class="vector">
+                <a href="https://github.com/Soumyajagupta07" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><img src=""class="git" alt="" srcset=""></a>
+                <a href="https://www.linkedin.com/in/soumyaja-gupta-7b331622b/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><img src=""class="linkedIn" alt="" srcset=""></a>
+                <a href="https://instagram.com/its_soumyaja____?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><img src=""class="insta" alt="" srcset=""></a>
+                
+            </div>
+        
     </div>
 </body>
 </html>

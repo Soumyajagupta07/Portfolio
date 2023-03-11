@@ -1,0 +1,17 @@
+li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    display: flex;
+    border-radius: 15px;
+    /* margin-left: 0;
+    bottom: -8px; */
+    left: 0;
+    background-color: deeppink;
+    transition: 0.5s;
+
+}
+
+li.active_link::after{
+    width: 100%;
+}
