@@ -1,74 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Quicksand', sans-serif;
-    color: antiquewhite;
-}
 
-body {
-    background-color: black;
-}
-
-.navbar {
-    display: flex;
-    top: 0;
-    position: sticky;
-    /* backdrop-filter: blur(15px)!important; */
-    background-color: black;
-    z-index: 1;
-}
-
-.logo {
-    height: 85px;
-    width: 85px;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 21px;
-}
-
-nav ul li {
-    list-style: none;
-    margin-left: 20px;
-    margin-right: 69px;
-
-}
-
-.navright {
-    margin-left: 444px;
-    display: flex;
-    align-items: center;
-}
-
-li::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    display: flex;
-    border-radius: 15px;
-    /* margin-left: 0;
-    bottom: -8px; */
-    left: 0;
-    background-color: deeppink;
-    transition: 0.5s;
-
-}
-
-li.active_link::after{
-    width: 100%;
-}
 
 .main_about{
     margin-top: 130px;
     margin-left: 50px;
     margin-right: 50px;
     display: flex;
+    color: antiquewhite;
 }
 
 .right-intro{
@@ -77,6 +14,16 @@ li.active_link::after{
     display: flex;;
     align-items: center;
     margin-right: 124px;
+}
+
+.about_skill h1{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about_skill h1 span{
+    color: deeppink;
 }
 
 /* .p_skills{
@@ -110,11 +57,12 @@ li.active_link::after{
     row-gap: 50px;
     column-gap: 50px;
     justify-content: center;
+    color: antiquewhite;
     /* align-items: center; */
 }
 .skill{
     border: 2px solid deeppink;
-    background: purple;
+    /* background: purple; */
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -126,5 +74,7 @@ li.active_link::after{
     cursor: pointer;
     margin: -5px;
     box-shadow: 0 0 20px 4px magenta;
+    color: deeppink;
+    background-color: rgb(9, 18, 14);
     /* transition: 5s ease-in; */
 }
