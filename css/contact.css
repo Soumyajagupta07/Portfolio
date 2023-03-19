@@ -3,3 +3,39 @@
     padding: 0;
     color: antiquewhite;
 }
+
+.contact{
+    display: flex;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+ i{
+    text-decoration: none;
+} 
+
+span{
+    color: deeppink;
+}
+
+.contact .contact_details{
+    display: flex;
+    font-weight: 500;
+}
+
+.contact p{
+    font-weight: 500;
+}
+
+.contact_left{
+    width: 700px;
+}
+.vector {
+    /* display: flex; */
+    justify-content: left; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+}
