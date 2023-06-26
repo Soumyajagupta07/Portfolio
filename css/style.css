@@ -71,12 +71,20 @@ li.active_link::after{
 }
 
 .info {
-    margin-left: 30px;
-    margin-top: 120px;
-    color: beige;
-    font-size: 70px;
+    margin-left: 50px;
+    /* margin-top: 15px; */
+    color: antiquewhite;
+    font-size: 50px;
     width: 900px;
+    display: flex;
+    align-items: center;
+}
+.info p{
+    width: 900px;
+}
 
+#element{
+    color: deeppink;
 }
 
 .wave {
