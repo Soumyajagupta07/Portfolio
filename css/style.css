@@ -146,6 +146,7 @@ li.active_link::after{
 
 .avatar_about {
     margin-top: 310px;
+    display: flex;
 }
 
 #avatar {
@@ -159,6 +160,9 @@ li.active_link::after{
     margin-left: 103px;
 }
 
+.avatar_right{
+    margin-left: 700px;
+}
 h4 {
     color: deeppink;
     font-size: 52px;
@@ -184,6 +188,10 @@ h4 {
     display: flex;
 }
 
+span{
+    color: deeppink;
+    font-style: italic;
+}
 .me {
     list-style: none;
     margin-right: 100px;
